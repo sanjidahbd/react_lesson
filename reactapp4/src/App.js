@@ -11,6 +11,7 @@ import './App.css';
 import ContactPage from './Pages/ContactPage';
 import Navbar from './Components/Navbar';
 import Blog from './Pages/Blog';
+import BlogEntry from './Pages/BlogEntry';
 
 
 const App = () => {
@@ -29,6 +30,8 @@ const App = () => {
                         element={<ContactPage />} />
                           <Route path="/blog"
                         element={<Blog />} />
+                         <Route path="/blog/new"
+                        element={<BlogEntry />} />
                 </Routes>
             </div>
         </Router>

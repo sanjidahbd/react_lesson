@@ -30,17 +30,28 @@ function Navbar() {
                   to="/about"
                   className={({ isActive }) => (isActive ? "active nav-item nav-link" : "nav-item nav-link")}
                 >About</NavLink>
-                  <NavLink
+              
+                 <div class="nav-item dropdown">
+                  <Link
+                    to="#"
+                    class="nav-link dropdown-toggle"
+                    data-bs-toggle="dropdown"
+                  >
+                  Blog
+                  </Link>
+                  <div class="dropdown-menu m-0">
+                     <NavLink
                   to="/blog"
-                  className={({ isActive }) => (isActive ? "active nav-item nav-link" : "nav-item nav-link")}
-                >Blog</NavLink>
-                
-                {/* <Link to="service.html" class="nav-item nav-link">
-                  Service
-                </Link>
-                <Link to="price.html" class="nav-item nav-link">
-                  Pricing
-                </Link> */}
+                  className={({ isActive }) => (isActive ? "dropdown-item" : "dropdown-item")}
+                >All Blog</NavLink>
+                      <NavLink
+                  to="/blog/new"
+                  className={({ isActive }) => (isActive ? "dropdown-item" : "dropdown-item")}
+                >New Blog</NavLink>
+                  
+                   
+                  </div>
+                </div>
                 <div class="nav-item dropdown">
                   <Link
                     to="#"
