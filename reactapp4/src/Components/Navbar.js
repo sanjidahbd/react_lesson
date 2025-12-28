@@ -48,6 +48,10 @@ function Navbar() {
                   to="/blog/new"
                   className={({ isActive }) => (isActive ? "dropdown-item" : "dropdown-item")}
                 >New Blog</NavLink>
+                      <NavLink
+                  to="/blog/new1"
+                  className={({ isActive }) => (isActive ? "dropdown-item" : "dropdown-item")}
+                >New Blog1</NavLink>
                   
                    
                   </div>

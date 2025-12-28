@@ -20,7 +20,7 @@ function BlogEntry() {
     }
   const blogPost = () =>{
     axios.post("http://localhost/sanjida_ritu/ReactJs/reactapp4/api/blog/addBlog.php",inputs).then(function(response){
-        console.log(response.data)
+       alert(response.data)
 
     })
 

@@ -12,6 +12,7 @@ import ContactPage from './Pages/ContactPage';
 import Navbar from './Components/Navbar';
 import Blog from './Pages/Blog';
 import BlogEntry from './Pages/BlogEntry';
+import BlogEntry1 from './Pages/BlogEntry1';
 
 
 const App = () => {
@@ -31,7 +32,10 @@ const App = () => {
                           <Route path="/blog"
                         element={<Blog />} />
                          <Route path="/blog/new"
-                        element={<BlogEntry />} />
+                        element={<BlogEntry />} />   {/*usestate */}
+                     
+                         <Route path="/blog/new1"
+                        element={<BlogEntry1 />} />{/*useform */}
                 </Routes>
             </div>
         </Router>
